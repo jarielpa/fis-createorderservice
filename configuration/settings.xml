@@ -20,6 +20,14 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
+  <proxies>
+    <proxy>
+      <active>true</active>
+      <protocol>https</protocol>
+      <host>proxy.posti.fi</host>
+      <port>8086</port>
+    </proxy>
+  </proxies>
   <profiles>
     <profile>
       <id>fusesource.repo</id>
