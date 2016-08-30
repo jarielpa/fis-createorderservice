@@ -291,7 +291,7 @@
             "containers": [
               {
                 "name": "${APP_NAME}",
-                "image": "library/${APP_NAME}:latest",
+                "image": "${APP_NAME}:latest",
                 "readinessProbe": {
                   "exec": {
                     "command": [
