@@ -291,13 +291,13 @@
             "containers": [
               {
                 "name": "${APP_NAME}",
-                "image": "${APP_NAME}:latest",
+                "image": "library/${APP_NAME}:latest",
                 "readinessProbe": {
                   "exec": {
                     "command": [
                       "/bin/bash",
                       "-c",
-                      "(curl -f 127.0.0.1:8080) >/dev/null 2>&1; test $? != 7"
+                      "(curl -f 127.0.0.1:9191) >/dev/null 2>&1; test $? != 7"
                     ]
                   },
                   "initialDelaySeconds": 30,
@@ -305,7 +305,7 @@
                 },
                 "ports": [
                   {
-                    "containerPort": 8080,
+                    "containerPort": 9191,
                     "name": "http"
                   },
                   {
