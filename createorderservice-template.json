@@ -113,7 +113,7 @@
           {
             "port": 9102,
             "protocol": "TCP",
-            "targetPort": 8080
+            "targetPort": 9191
           }
         ],
         "selector": {
